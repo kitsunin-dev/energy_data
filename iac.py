@@ -16,9 +16,6 @@ DB_PORT = '5432'
 beg_day = dt.date.today()
 end_day = beg_day + dt.timedelta(days=7)
 
-print(beg_day)
-print(end_day)
-
 i = 1
 has_later = False
 end_cycle = False
@@ -124,6 +121,7 @@ for j in range(len(final_df.index)):
                     conn.commit()
 
 print(f'{num_points} points')
+print("Houses' coordinates:")
 plt.show()
 
 cur.close()
