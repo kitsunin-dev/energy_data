@@ -125,3 +125,6 @@ for j in range(len(final_df.index)):
 
 print(f'{num_points} points')
 plt.show()
+
+cur.close()
+conn.close()
